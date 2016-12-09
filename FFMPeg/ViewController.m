@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import <libavcodec/avcodec.h>
+#import <libavformat/avformat.h>
+#import <libswscale/swscale.h>
 @interface ViewController ()
 
 @end
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    printf("%s",avcodec_configuration());
 }
 
 
